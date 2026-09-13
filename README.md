@@ -104,6 +104,6 @@ Once deployed, add the actual Pages URL to this README and the repository About 
 
 ## Project notes
 
-Prepared for **VIL / sqlmapmeow** as a small AI-assisted portfolio project.
-Read the parser and tests, try the edge cases, and customize it before presenting it
-as a project you maintain. No professional experience or usage statistics are implied.
+<div align="center">
+  <sub>json-desk · sqlmapmeow</sub>
+</div>
