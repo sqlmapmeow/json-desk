@@ -1,0 +1,8 @@
+{
+  "name": "json-desk",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local-first JSON formatter and validator. No dependencies or build step.",
+  "scripts": { "test": "node --test tests/core.test.cjs", "start": "node server.cjs" },
+  "engines": { "node": ">=20" }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A focused JSON formatter and validator. Format, minify and inspect JSON entirely in your browser.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>JSON Desk — Make sense of your data.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <script src="src/core.js" defer></script><script src="src/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#source">Skip to editor</a>
+  <header class="site-header"><a class="brand" href="./" aria-label="JSON Desk home"><span class="brand-mark">{ }</span><span>JSON<span class="brand-light">desk</span><span class="version">v1.0</span></span></a><div class="header-right"><span class="local-label"><i></i> LOCAL BY DESIGN</span><a class="github-link" href="https://github.com/sqlmapmeow" target="_blank" rel="noopener noreferrer">sqlmapmeow <span aria-hidden="true">↗</span></a></div></header>
+  <main>
+    <section class="intro"><div><div class="eyebrow">A LITTLE ORDER FOR YOUR DATA</div><h1>Messy JSON.<br class="mobile-break"> <span>Clear thinking.</span></h1><p>A focused workspace to format, validate and tidy up your JSON.<br class="wide-break"> No accounts. No uploads to a server. Just you and your data.</p></div><div class="intro-symbol" aria-hidden="true"><span>{</span><i>···</i><span>}</span></div></section>
+    <section class="workspace" aria-label="JSON workspace">
+      <div class="toolbar"><div class="main-actions"><button id="format" class="primary"><span aria-hidden="true">≡</span> Format JSON <kbd>Ctrl ↵</kbd></button><button id="minify">Minify</button><button id="validate">Validate</button></div><label class="indent">Indent <select id="indent" aria-label="Indentation"><option value="2">2 spaces</option><option value="4">4 spaces</option></select></label></div>
+      <div class="editors">
+        <section class="pane input-pane" aria-labelledby="input-title"><div class="pane-header"><h2 id="input-title"><span class="tiny-dot"></span> INPUT</h2><div class="pane-actions"><button id="sample" class="text-button">Load example</button><button id="open" class="text-button">Open file <span aria-hidden="true">↗</span></button><input id="file" type="file" accept=".json,application/json,text/plain" hidden></div></div>
+          <div class="editor-body"><pre id="input-lines" class="gutter" aria-hidden="true">1</pre><textarea id="source" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="Input JSON" aria-describedby="input-help" placeholder='Paste your JSON here…' wrap="off"></textarea></div>
+          <div class="pane-footer"><span id="input-stats">0 bytes · 1 line</span><button id="clear" class="text-button">Clear input</button></div>
+        </section>
+        <section class="pane output-pane" aria-labelledby="output-title"><div class="pane-header"><h2 id="output-title"><span class="tiny-dot purple"></span> OUTPUT</h2><div class="pane-actions"><button id="copy" class="text-button" disabled>Copy</button><button id="download" class="text-button" disabled>Download <span aria-hidden="true">↓</span></button></div></div>
+          <div class="output-body" id="output-scroll"><pre id="output-lines" class="gutter" aria-hidden="true">1</pre><pre id="result" tabindex="0" aria-label="Processed JSON"><code id="output"></code></pre><div id="empty-output" class="empty-output"><span aria-hidden="true">{ }</span><strong>A clean slate.</strong><p>Your formatted JSON will appear here.</p></div></div>
+          <div class="pane-footer"><span id="output-stats">Waiting for input</span><span class="output-mode" id="output-mode">READ ONLY</span></div>
+        </section>
+      </div>
+      <div id="status" class="status" role="status" aria-live="polite"><span id="status-icon" aria-hidden="true">○</span><span id="status-text">Ready when you are. Paste JSON or load an example.</span><button id="error-jump" class="text-button" hidden>Go to error →</button></div>
+    </section>
+    <section class="below"><p id="input-help"><span aria-hidden="true">⌘</span> <kbd>Ctrl / ⌘ + Enter</kbd> to format · Max 1 MiB</p><p><span class="privacy-icon" aria-hidden="true">◇</span> Your JSON stays in this tab. Nothing is stored.</p></section>
+    <section class="features" aria-label="Features"><div><span class="feature-number">01</span><h3>Readable by default.</h3><p>Two or four spaces. Clean structure.<br>One less thing to think about.</p></div><div><span class="feature-number">02</span><h3>Details stay intact.</h3><p>Large numbers and key order are preserved.<br>No silent rounding. No rearranging.</p></div><div><span class="feature-number">03</span><h3>Keep it on your desk.</h3><p>Runs entirely in your browser.<br>Works offline after downloading the files.</p></div></section>
+  </main><footer><span><b>JSONdesk</b> / A small tool, thoughtfully built.</span><span>VIL · <a href="https://github.com/sqlmapmeow" target="_blank" rel="noopener noreferrer">sqlmapmeow ↗</a></span></footer>
+</body></html>
