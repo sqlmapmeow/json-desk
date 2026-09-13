@@ -86,21 +86,6 @@ The GitHub profile link leaves the application only when clicked.
 - Clipboard access may be denied on some browsers or local-file pages; the fallback
   selects the output for manual copying.
 
-## Put it on GitHub
-
-Create a public repository named **`json-desk`** under your account and upload the
-**contents** of this folder. `index.html` and `README.md` belong at the repository root.
-Do not upload only the ZIP file. No repository or deployment has been created for you.
-
-Suggested repository description:
-
-> A local-first JSON formatter and validator. Vanilla JavaScript, zero dependencies, precision-preserving output.
-
-Suggested topics: `json`, `javascript`, `formatter`, `validator`, `developer-tools`, `vanilla-js`.
-
-To host it with GitHub Pages, configure Pages to publish from the root of your chosen
-branch (usually `main`). The project uses relative asset paths and needs no build.
-Once deployed, add the actual Pages URL to this README and the repository About section.
 
 ## Project notes
 
